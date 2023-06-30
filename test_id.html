@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        table,
+        th,
+        td {
+            border: 1px solid rgb(121, 31, 31);
+            border-collapse: collapse;
+        }
+    </style> -->
+    <style>
+        #p1 {
+          background-color: rgb(128, 217, 247);
+          color: black;
+          padding: 40px;
+          font-family:Georgia, Times, 'Times New Roman', serif;
+          text-align: center;
+        } 
+        #p2 {
+          background-color: rgb(128, 247, 207);
+          color: black;
+          padding: 40px;
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          text-align: center;
+        } 
+        #p3 {
+          background-color: rgb(134, 207, 212);
+          color: black;
+          padding: 40px;
+          font-family:'Segoe UI', Tahoma,Verdana, sans-serif;
+          text-align: center;
+        } 
+        #p4 {
+          background-color: rgb(176, 135, 223);
+          color: black;
+          padding: 40px;
+          font-family:'Times New Roman', Times, serif;
+          text-align: center;
+        } 
+        #p5 {
+          background-color: rgb(235, 62, 119);
+          color: black;
+          padding: 40px;
+          font-family:Impact,'Arial Narrow Bold', sans-serif;
+          text-align: center;
+        } 
+        #p6 {
+          background-color: rgb(196, 67, 67);
+          color: black;
+          padding: 40px;
+          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif;
+          text-align: center;
+        } 
+        #p7 {
+          background-color: rgb(76, 145, 73);
+          color: black;
+          padding: 40px;
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          text-align: center;
+        } 
+        #p8 {
+          background-color: rgb(161, 59, 46);
+          color: black;
+          padding: 40px;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          text-align: center;
+        } 
+        #p9 {
+          background-color: rgb(64, 163, 130);
+          color: black;
+          padding: 40px;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          text-align: center;
+        } 
+        #p10 {
+          background-color: rgb(50, 60, 204);
+          color: black;
+          padding: 40px;
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          text-align: center;
+        } 
+        </style>
+</head>
+
+<body>
+    <center><h1>รายการสินค้า</h1></center>
+    <table border="1" width="100%" cellpanding="10" cellspacing="5">
+        <thead>
+            <tH>ลำดับ</tH>
+            <th>รหัสสินค้า</th>
+            <th>ภาพสินค้า</th>
+            <th>ชื่อสินค้า</th>
+            <th>ราคา</th>
+            <th>ซื้อสินค้า</th>
+        </thead>
+        <tbody>
+            <tr id="p1" bgcolor="ccffff">
+                <td border="1" >
+                    1
+                </td>
+                <td>
+                    001
+                </td>
+                <td>
+                    <img src="" width="100px"
+                        height="70px" />
+                </td>
+                <td>เบอร์เกอร์</td>
+                <td>150.00</td>
+                <td>
+                    <a href="#">สั่งซื้อ</a>
+                </td>
+            </tr>
+            <tr id="p2" bgcolor="FFCCE5">
+                <td>
+                    2
+                </td>
+                <td>
+                    002
+                </td>
+                <td>
+                    <img src="" width="100px"
+                        height="90px" />
+                </td>
+                <td>โค้ก</td>
+                <td>34.00</td>
+                <td>
+                    <a href="#">สั้งซื้อ</a>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>ราคารวม : 5900 บาท</td>
+            </tr>
+            <tbody>
+                <tr id="p3" bgcolor="ccffe5">
+                    <td>
+                        3
+                    </td>
+                    <td>
+                        003
+                    </td>
+                    <td>
+                        <img src="" width="100px"
+                            height="70px" />
+                    </td>
+                    <td>สเต็กปลาแซลม่อน</td>
+                    <td>250.00</td>
+                    <td>
+                        <a href="#">สั่งซื้อ</a>
+                    </td>
+                </tr>
+                <tr id="p4" bgcolor="ffccff">
+                    <td>
+                        4
+                    </td>
+                    <td>
+                        004
+                    </td>
+                    <td>
+                        <img src=""
+                            width="100px" height="90px" />
+                    </td>
+                    <td>สปาเก็ตตี้</td>
+                    <td>69.00</td>
+                    <td>
+                        <a href="#">สั้งซื้อ</a>
+                    </td>
+                </tr>
+                <tr id="p5" bgcolor="e5ccff">
+                    <td>
+                        5
+                    </td>
+                    <td>
+                        005
+                    </td>
+                    <td>
+                        <img src=""
+                            width="100px" height="70px" />
+                    </td>
+                    <td>ไอศกรีม</td>
+                    <td>20.00</td>
+                    <td>
+                        <a href="#">สั่งซื้อ</a>
+                    </td>
+                </tr>
+                <tr id="p6" bgcolor="e5ffcc">
+                    <td>
+                        6
+                    </td>
+                    <td>
+                        006
+                    </td>
+                    <td>
+                        <img src="" width="100px"
+                            height="90px" />
+                    </td>
+                    <td>แพนเค้ก</td>
+                    <td>34.00</td>
+                    <td>
+                        <a href="#">สั้งซื้อ</a>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+            </tbody>
+            <tfoot>
+                <tr></tr>
+                <tbody>
+                    <tr id="p7" bgcolor="ffffcc">
+                        <td>
+                            7
+                        </td>
+                        <td>
+                            007
+                        </td>
+                        <td>
+                            <img src=""
+                                width="100px" height="70px" />
+                        </td>
+                        <td>กาแฟ</td>
+                        <td>125.00</td>
+                        <td>
+                            <a href="#">สั่งซื้อ</a>
+                        </td>
+                    </tr>
+                    <tr id="p8" bgcolor="FFCCE5" ffe5cc>
+                        <td>
+                            8
+                        </td>
+                        <td>
+                            008
+                        </td>
+                        <td>
+                            <img src=""
+                                width="100px" height="90px" />
+                        </td>
+                        <td>สตอเบอร์รี่</td>
+                        <td>60.00</td>
+                        <td>
+                            <a href="#">สั้งซื้อ</a>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tr id="p9" bgcolor="ffcccc">
+                    <td>
+                        9
+                    </td>
+                    <td>
+                        009
+                    </td>
+                    <td>
+                        <img src="" width="100px"
+                            height="70px" />
+                    </td>
+                    <td>มาการอง</td>
+                    <td>300.00</td>
+                    <td>
+                        <a href="#">สั่งซื้อ</a>
+                    </td>
+                </tr>
+                <tr id="p10" bgcolor="ff99cc">
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        010
+                    </td>
+                    <td>
+                        <img src="" width="100px"
+                            height="90px" />
+                    </td>
+                    <td>ป้อปครอน</td>
+                    <td>370.00</td>
+                    <td>
+                        <a href="#">สั้งซื้อ</a>
+                    </td>
+                </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr></tr>
+                    <tbody>
+                        <tr id="p9" bgcolor="ff99ff">
+                            <td>
+                                11
+                            </td>
+                            <td>
+                                011
+                            </td>
+                            <td>
+                                <img src=""
+                                    width="100px" height="70px" />
+                            </td>
+                            <td>ส้ม</td>
+                            <td>35.00</td>
+                            <td>
+                                <a href="#">สั่งซื้อ</a>
+                            </td>
+                        </tr>
+                        <tr id="p8" bgcolor="cc99ff">
+                            <td>
+                                12
+                            </td>
+                            <td>
+                                012
+                            </td>
+                            <td>
+                                <img src=""
+                                    width="100px" height="90px" />
+                            </td>
+                            <td>คอนแฟลก</td>
+                            <td>20.00</td>
+                            <td>
+                                <a href="#">สั้งซื้อ</a>
+                            </td>
+                        </tr>
+                        <tr id="p7" bgcolor="9999ff">
+                            <td>
+                                13
+                            </td>
+                            <td>
+                                013
+                            </td>
+                            <td>
+                                <img src=""
+                                    width="100px" height="70px" />
+                            </td>
+                            <td>เนื้อ</td>
+                            <td>499.00</td>
+                            <td>
+                                <a href="#">สั่งซื้อ</a>
+                            </td>
+                        </tr>
+                        <tr id="p6" bgcolor="99ccff">
+                            <td>
+                                14
+                            </td>
+                            <td>
+                                014
+                            </td>
+                            <td>
+                                <img src=""
+                                    width="100px" height="90px" />
+                            </td>
+                            <td>ขนมปัง กาแฟ</td>
+                            <td>99.00</td>
+                            <td>
+                                <a href="#">สั้งซื้อ</a>
+                            </td>
+                        </tr>
+                        <tr></tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr></tr>
+                        <tbody>
+                            <tr id="p5" bgcolor="99ffff">
+                                <td>
+                                    15
+                                </td>
+                                <td>
+                                    015
+                                </td>
+                                <td>
+                                    <img src=""
+                                        width="100px" height="70px" />
+                                </td>
+                                <td>ครัวซอง</td>
+                                <td>49.00</td>
+                                <td>
+                                    <a href="#">สั่งซื้อ</a>
+                                </td>
+                            </tr>
+                            <tr id="p4" bgcolor="99ffcc">
+                                <td>
+                                    16
+                                </td>
+                                <td>
+                                    016
+                                </td>
+                                <td>
+                                    <img src=""
+                                        width="100px" height="90px" />
+                                </td>
+                                <td>พิซซ่า</td>
+                                <td>199.00</td>
+                                <td>
+                                    <a href="#">สั้งซื้อ</a>
+                                </td>
+                            <tr id="p3" bgcolor="99ff99">
+                                <td>
+                                    17
+                                </td>
+                                <td>
+                                    017
+                                </td>
+                                <td>
+                                    <img src=""
+                                        width="100px" height="70px" />
+                                </td>
+                                <td>ไก่ทอด</td>
+                                <td>29.00</td>
+                                <td>
+                                    <a href="#">สั่งซื้อ</a>
+                                </td>
+                            </tr>
+                            <tr  id="p2" bgcolor="ccff99">
+                                <td>
+                                    18
+                                </td>
+                                <td>
+                                    018
+                                </td>
+                                <td>
+                                    <img src=""
+                                        width="100px" height="90px" />
+                                </td>
+                                <td>ไข่ดาว</td>
+                                <td>20.00</td>
+                                <td>
+                                    <a href="#">สั้งซื้อ</a>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tr id="p1" bgcolor="ffff99">
+                            <td>
+                                19
+                            </td>
+                            <td>
+                                019
+                            </td>
+                            <td>
+                                <img src=""
+                                    width="100px" height="70px" />
+                            </td>
+                            <td>เฟรนฟราย</td>
+                            <td>59.00</td>
+                            <td>
+                                <a href="#">สั่งซื้อ</a>
+                            </td>
+                        </tr>
+                        <tr id="p10" bgcolor="Ff9999">
+                            <td>
+                                20
+                            </td>
+                            <td>
+                                020
+                            </td>
+                            <td>
+                                <img src=""
+                                    width="100px" height="90px" />
+                            </td>
+                            <td>บีบเวอร์ริงตัน</td>
+                            <td>999.00</td>
+                            <td>
+                                <a href="#">สั้งซื้อ</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr></tr>
+                            <tbody>
+                                <tr id="p1" bgcolor="66ffff">
+                                    <td>
+                                        21
+                                    </td>
+                                    <td>
+                                        021
+                                    </td>
+                                    <td>
+                                        <img src=""
+                                            width="100px" height="70px" />
+                                    </td>
+                                    <td>มันบด</td>
+                                    <td>49.00</td>
+                                    <td>
+                                        <a href="#">สั่งซื้อ</a>
+                                    </td>
+                                </tr>
+                                <tr id="p2" bgcolor="66b2ff">
+                                    <td>
+                                        22
+                                    </td>
+                                    <td>
+                                        022
+                                    </td>
+                                    <td>
+                                        <img src=""
+                                            width="100px" height="90px" />
+                                    </td>
+                                    <td>ผักโขมอบชีด</td>
+                                    <td>49.00</td>
+                                    <td>
+                                        <a href="#">สั้งซื้อ</a>
+                                    </td>
+                                </tr>
+                                <tr id="p3" bgcolor="66ffb2">
+                                    <td>
+                                        23
+                                    </td>
+                                    <td>
+                                        023
+                                    </td>
+                                    <td>
+                                        <img src=""
+                                            width="100px" height="70px" />
+                                    </td>
+                                    <td>ล้อบสเตอร์อบชีด</td>
+                                    <td>499.00</td>
+                                    <td>
+                                        <a href="#">สั่งซื้อ</a>
+                                    </td>
+                                </tr>
+                                <tr id="p4" bgcolor="66ff66">
+                                    <td>
+                                        24
+                                    </td>
+                                    <td>
+                                        024
+                                    </td>
+                                    <td>
+                                        <img src=""
+                                            width="100px" height="90px" />
+                                    </td>
+                                    <td>สตูวเนื้อ</td>
+                                    <td>299.00</td>
+                                    <td>
+                                        <a href="#">สั้งซื้อ</a>
+                                    </td>
+                                </tr>
+                                <tr></tr>
+
+                            </tbody>
+                            <tfoot>
+                                <tr></tr>
+                                <tbody>
+                                    <tr id="p5" bgcolor="00ff00">
+                                        <td>
+                                            25
+                                        </td>
+                                        <td>
+                                            025
+                                        </td>
+                                        <td>
+                                            <img src=""
+                                                width="100px" height="70px" />
+                                        </td>
+                                        <td>แซมด์วิซชอกไก่อโวคาโด</td>
+                                        <td>79.00</td>
+                                        <td>
+                                            <a href="#">สั่งซื้อ</a>
+                                        </td>
+                                    </tr>
+                                    <tr id="p6" bgcolor="b266ff">
+                                        <td>
+                                            26
+                                        </td>
+                                        <td>
+                                            026
+                                        </td>
+                                        <td>
+                                            <img src=""
+                                                width="100px" height="90px" />
+                                        </td>
+                                        <td>ค็อกเทลกุ้ง</td>
+                                        <td>35.00</td>
+                                        <td>
+                                            <a href="#">สั้งซื้อ</a>
+                                        </td>
+                                    <tr id="p7" bgcolor="oocccc">
+                                        <td>
+                                            27
+                                        </td>
+                                        <td>
+                                            027
+                                        </td>
+                                        <td>
+                                            <img src=""
+                                                width="100px" height="70px" />
+                                        </td>
+                                        <td>ล้อบสเตอร์อบชีด</td>
+                                        <td>499.00</td>
+                                        <td>
+                                            <a href="#">สั่งซื้อ</a>
+                                        </td>
+                                    </tr>
+                                    <tr id="p8" bgcolor="ffb266">
+                                        <td>
+                                            28
+                                        </td>
+                                        <td>
+                                            028
+                                        </td>
+                                        <td>
+                                            <img src=""
+                                                width="100px" height="90px" />
+                                        </td>
+                                        <td>พาสต้า</td>
+                                        <td>99.00</td>
+                                        <td>
+                                            <a href="#">สั้งซื้อ</a>
+                                        </td>
+                                    </tr>
+                                    <tr></tr>
+
+                                </tbody>
+                                <tfoot>
+                                    <tr></tr>
+                                    <tbody>
+                                        <tr id="p9" bgcolor="80ff00">
+                                            <td>
+                                                29
+                                            </td>
+                                            <td>
+                                                029
+                                            </td>
+                                            <td>
+                                                <img src=""
+                                                    width="100px" height="70px" />
+                                            </td>
+                                            <td>พ้อทพายไก่ฟักทอง</td>
+                                            <td>89.00</td>
+                                            <td>
+                                                <a href="#">สั่งซื้อ</a>
+                                            </td>
+                                        </tr>
+                                        <tr id="p10" bgcolor="00cccc">
+                                            <td>
+                                                30
+                                            </td>
+                                            <td>
+                                                030
+                                            </td>
+                                            <td>
+                                                <img src=""
+                                                    width="100px" height="90px" />
+                                            </td>
+                                            <td>หอยนางรมอบไวท์</td>
+                                            <td>199.00</td>
+                                            <td>
+                                                <a href="#">สั้งซื้อ</a>
+                                        </tr>
+                                    <tfoot>
+                                    </tfoot>
+    </table>
+    </tfoot>
+    </table>
+</body>
+
+</html>
